@@ -1,0 +1,31 @@
+Cucumber Live Class
+
+--programming language- java
+--tools - to automate - selenium (it is used to automate only web based application (UI))
+    ---report
+    ---control of execution
+    User Story = Login functionality validation
+
+    Test cases - valid login
+            in Cucumber/Gherkin/BDD
+
+    Test cases - invalid login
+
+    Java - language
+    Maven - build too
+    Selenium - added
+    Cucumber - added
+    Properties File - added
+    Excel File - added
+
+    Test case 1 - Search employee by id
+    Test case 2 - search employee by name
+
+    tagname
+    tags = "@chikhi or @godwill"// one of the conditions must be true then it will execute
+    tags ="@chikhi and @godwill"// both the conditions must be true then it will execute
+
+    tagname
+
+    @chiki or @godwill - only the test case having one of the tags will be executed
+    @chiki and @godwill - only the test case having both the tags available will be executed
