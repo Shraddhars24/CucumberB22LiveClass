@@ -14,8 +14,9 @@ import org.junit.runner.RunWith;
         glue = "steps",
         //if we set the value to true, it stops execution and scan all the step definitions and gives missing steps
         dryRun =false,
-        tags = "@chikhi or @godwill",// one of the conditions must be true then it will execute
+//        tags = "@chikhi or @godwill",// one of the conditions must be true then it will execute
 //      tags ="@chikhi and @godwill"// both the conditions must be true then it will execute
+        tags = "@datatable",
         plugin = {"pretty"}
 
 )

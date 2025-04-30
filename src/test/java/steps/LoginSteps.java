@@ -24,12 +24,19 @@ public class LoginSteps extends CommonMethods {
     }
     @When("user enters valid username and password")
     public void user_enters_valid_username_and_password() {
-        driver.findElement(By.id("txtUsername")).sendKeys("admin");
-        driver.findElement(By.id("txtPassword")).sendKeys("Hum@nhrm123");
+        WebElement userNameField=driver.findElement(By.id("txtUsername"));
+//        userNameField.sendKeys("admin");
+        sendText("admin",userNameField);
+
+        WebElement passwordField=driver.findElement(By.id("txtPassword"));
+//        passwordField.sendKeys("Hum@nhrm123");
+        sendText("Hum@nhrm123",passwordField);
     }
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
-        driver.findElement(By.id("btnLogin")).click();
+        WebElement loginButton= driver.findElement(By.id("btnLogin"));
+        loginButton.click();
+
     }
     @Then("user is successfully logged in")
     public void user_is_successfully_logged_in() {
@@ -41,8 +48,11 @@ public class LoginSteps extends CommonMethods {
         WebElement usernameField = driver.findElement(By.id("txtUsername"));
         WebElement passwordField = driver.findElement(By.id("txtPassword"));
 
-        usernameField.sendKeys("admin321");
-        passwordField.sendKeys("ghsnertuldnf");
+//        usernameField.sendKeys("admin321");
+        sendText("admin321",usernameField);
+
+//        passwordField.sendKeys("ghsnertuldnf");
+        sendText("ghsnertuldnf",passwordField);
     }
     @Then("user is able to see error message")
     public void user_is_able_to_see_error_message() {
