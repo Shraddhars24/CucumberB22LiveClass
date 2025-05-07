@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -16,10 +15,12 @@ import org.junit.runner.RunWith;
         dryRun =false,
 //        tags = "@chikhi or @godwill",// one of the conditions must be true then it will execute
 //      tags ="@chikhi and @godwill"// both the conditions must be true then it will execute
-        tags = "@invalid",
-        plugin = {"pretty","html:target/cucumber.html","rerun:target/failed.txt","json:target/cucumber.json"}
+        tags = "@regression",
+        plugin = {"pretty","html:target/cucumber.html"}
 
 )
 
-public class TestRunner {
+
+
+public class RegressionRunner {
 }

@@ -50,4 +50,56 @@ Cucumber Live Class
      --hooks - background -- scenario
       data driven testing - to execute one test case against multiple set of data
 
+Cucumber class 3 -
+POM Page object model design pattern - for single screen, ypu have one pade class
+- under this class, you keep locators/web elements/objects repository belong to that page
+
+assertions - to validate all the required fields, values, button, options
+assertequals - when you have to compare 2 values together
+
+if it is passing, it will not give you any message
+if it is failing, it will give you assertion error
+
+
+rerun plugin - when we execute our test cases  and some of them are failed, then it gets the path of
+those failed test cases and keep it under one file and then we can execute this file to check only failed test
+cases.
+
+excel file - excel reader and calling it in scripts
+page object model design pattern
+assertions - assert equals and asserttrue
+page initializer
+rerun plugin
+failed runner
+regression runner
+html report
+
+what is pending -
+cucumber report with screenshot
+maven lifecycle
+execution from pom.xml file
+
+Class no 4
+reports - for local reference
+
+scalable
+mature
+reusable
+no hard coded data
+single point execution
+
+maven surefire plugin - it makes your project to single build
+
+phases of maven
+clean - it deleted the target folder
+validate - it checks the validity of the code
+compile - it compiles
+test - it executes the code
+package - it converts into package
+verify
+install - it installs all the required jars and plugins
+site
+deploy - it deploys the code
+
+test- install, validate, compile, package , test
 

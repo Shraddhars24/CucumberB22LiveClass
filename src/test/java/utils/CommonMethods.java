@@ -16,8 +16,9 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-public class CommonMethods {
+public class CommonMethods extends PageInitializer {
     public static WebDriver driver;
+
 
     public void openBrowserAndLaunchApplication() {
         //Declare the instance
@@ -46,8 +47,7 @@ public class CommonMethods {
         //take me to the url
 
         driver.get(ConfigReader.read("url"));
-
-        //initializerPageObjects();
+        initializerPageObjects();// This comes from PageInitializer Class
 
         //*String url = ConfigReader.read(Constants.CONFIG_FILE_PATH, "url");
         //driver.get(url);

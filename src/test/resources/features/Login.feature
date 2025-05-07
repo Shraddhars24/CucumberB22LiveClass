@@ -8,7 +8,7 @@ Feature: Login feature functionality
     And user clicks on login button
     Then user is successfully logged in
 
-  @regression @sprint2 @chikhi @sprint
+  @regression @sprint2 @chikhi @sprint @invalid
   Scenario: Invalid login functionality
     #Given user is able to access HRMS application
     When user enters invalid username and password
